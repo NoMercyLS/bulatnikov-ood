@@ -23,9 +23,8 @@ namespace Observer.WeatherData
             _accMeasurements += value;
             ++_countMeasurements;
         }
-        public string GetStatisticalData(double data)
+        public string GetStatisticalData()
         {
-            UpdateStatisticalData(data);
             return $"\nMax: {Math.Round(_maxMeasurement, 4)}\nMin: {Math.Round(_minMeasurement, 4)}\nAvg: {Math.Round(_accMeasurements / _countMeasurements, 2)}\n";
         }
 

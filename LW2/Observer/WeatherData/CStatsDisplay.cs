@@ -11,10 +11,13 @@ namespace Observer.WeatherData
         private CStatisticalData _pressureData = new CStatisticalData();
         public void Update(SWeatherInfo data)
         {
+            _temperatureData.UpdateStatisticalData(data.temperature);
+            _humidityData.UpdateStatisticalData(data.humidity);
+            _pressureData.UpdateStatisticalData(data.pressure);
             Console.WriteLine("Statistical data:");
-            Console.WriteLine($"Temperature: {_temperatureData.GetStatisticalData(data.temperature)}");
-            Console.WriteLine($"Humidity: {_humidityData.GetStatisticalData(data.humidity)}");
-            Console.WriteLine($"Pressure: {_pressureData.GetStatisticalData(data.pressure)}");
+            Console.WriteLine($"Temperature: {_temperatureData.GetStatisticalData()}");
+            Console.WriteLine($"Humidity: {_humidityData.GetStatisticalData()}");
+            Console.WriteLine($"Pressure: {_pressureData.GetStatisticalData()}");
         }
     }
 }
