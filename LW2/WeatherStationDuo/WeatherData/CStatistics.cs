@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace WeatherStation.WeatherData
+namespace WeatherStationDuo.WeatherData
 {
-    public class CStatsDisplay : Observer.IObserver<SWeatherInfo>
+    class CStatistics
     {
         private CStatisticalData _temperatureData = new CStatisticalData();
         private CStatisticalData _humidityData = new CStatisticalData();
@@ -13,13 +13,13 @@ namespace WeatherStation.WeatherData
         {
             return $"Max: {data.GetMaxValue()}\nMin: {data.GetMinValue()}\nAvg: {data.GetAvgValue()}";
         }
-        public void Update(SWeatherInfo data)
+        public void PrintStats(SWeatherInfo data)
         {
             _temperatureData.UpdateStatisticalData(data.temperature);
             _humidityData.UpdateStatisticalData(data.temperature);
             _pressureData.UpdateStatisticalData(data.temperature);
 
-            Console.WriteLine("Statistical data:");
+            Console.WriteLine(" statistical data:");
             Console.WriteLine($"Temperature: {GetStatisticalData(_temperatureData)}");
             Console.WriteLine($"Humidity: {GetStatisticalData(_humidityData)}");
             Console.WriteLine($"Pressure: {GetStatisticalData(_pressureData)}");

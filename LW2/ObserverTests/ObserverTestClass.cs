@@ -1,11 +1,11 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Observer.Observer;
-using Observer.WeatherData;
+using WeatherStation.Observer;
+using WeatherStation.WeatherData;
 using System;
 
 namespace ObserverTests
 {
-    public class ObserverTestClass : Observer.Observer.IObserver<SWeatherInfo>
+    public class ObserverTestClass : WeatherStation.Observer.IObserver<SWeatherInfo>
     {
         private readonly int _priority;
         public ObserverTestClass(int priority)

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Observer.Observer
+namespace WeatherStation.Observer
 {
     public abstract class CObservable<T> : IObservable<T>
     {

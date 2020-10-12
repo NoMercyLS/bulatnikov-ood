@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Observer.WeatherData;
+using WeatherStation.WeatherData;
 using System;
 using System.Collections.Generic;
 using System.Text;

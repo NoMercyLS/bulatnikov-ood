@@ -1,8 +1,8 @@
-﻿using Observer.WeatherData;
+﻿using WeatherStation.WeatherData;
 using System;
 using System.Threading;
 
-namespace Observer
+namespace WeatherStation
 {
     public class Program
     {

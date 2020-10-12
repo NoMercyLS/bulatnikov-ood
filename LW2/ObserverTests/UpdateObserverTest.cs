@@ -1,16 +1,16 @@
-﻿using Observer.Observer;
-using Observer.WeatherData;
+﻿using WeatherStation.Observer;
+using WeatherStation.WeatherData;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace ObserverTests
 {
-    public class UpdateObserverTest : Observer.Observer.IObserver<SWeatherInfo>
+    public class UpdateObserverTest : WeatherStation.Observer.IObserver<SWeatherInfo>
     {
-        private readonly Observer.Observer.IObservable<SWeatherInfo> _observable;
+        private readonly WeatherStation.Observer.IObservable<SWeatherInfo> _observable;
 
-        public UpdateObserverTest(Observer.Observer.IObservable<SWeatherInfo> observable)
+        public UpdateObserverTest(WeatherStation.Observer.IObservable<SWeatherInfo> observable)
         {
             _observable = observable;
         }

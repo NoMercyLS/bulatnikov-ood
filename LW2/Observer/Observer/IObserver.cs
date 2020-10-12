@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Observer.Observer
+namespace WeatherStation.Observer
 {
     public interface IObserver<T>
     {

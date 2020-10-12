@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Observer.WeatherData
+namespace WeatherStation.WeatherData
 {
     public class CStatisticalData
     {
@@ -23,11 +23,17 @@ namespace Observer.WeatherData
             _accMeasurements += value;
             ++_countMeasurements;
         }
-        public string GetStatisticalData(double data)
+        public double GetMinValue()
         {
-            UpdateStatisticalData(data);
-            return $"\nMax: {Math.Round(_maxMeasurement, 4)}\nMin: {Math.Round(_minMeasurement, 4)}\nAvg: {Math.Round(_accMeasurements / _countMeasurements, 2)}\n";
+            return _minMeasurement;
         }
-
+        public double GetMaxValue()
+        {
+            return _maxMeasurement;
+        }
+        public double GetAvgValue()
+        {
+            return _accMeasurements / _countMeasurements;
+        }
     }
 }

@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Observer.Observer
+namespace WeatherStationDuo.Observer
 {
     public interface IObserver<T>
     {
-        void Update(T data);
+        void Update(T data, IObservable<T> observable);
     }
 }

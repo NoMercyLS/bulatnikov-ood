@@ -1,9 +1,9 @@
-﻿using Observer.Observer;
+﻿using WeatherStation.Observer;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Observer.WeatherData
+namespace WeatherStation.WeatherData
 {
     public class CWeatherData : CObservable<SWeatherInfo>
     {

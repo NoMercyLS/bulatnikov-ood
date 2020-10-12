@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Observer.WeatherData
+namespace WeatherStationDuo.WeatherData
 {
     public struct SWeatherInfo
     {
