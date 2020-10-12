@@ -11,7 +11,7 @@ namespace WeatherStationDuo.WeatherData
         private CStatisticalData _pressureData = new CStatisticalData();
         private string GetStatisticalData(CStatisticalData data)
         {
-            return $"Max: {data.GetMaxValue()}\nMin: {data.GetMinValue()}\nAvg: {data.GetAvgValue()}";
+            return $"\n\t\tMax: {data.GetMaxValue()}\n\t\tMin: {data.GetMinValue()}\n\t\tAvg: {data.GetAvgValue()}\n";
         }
         public void PrintStats(SWeatherInfo data)
         {
