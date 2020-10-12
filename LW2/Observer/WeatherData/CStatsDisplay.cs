@@ -16,6 +16,7 @@ namespace WeatherStation.WeatherData
         public void Update(SWeatherInfo data)
         {
             _temperatureData.UpdateStatisticalData(data.temperature);
+<<<<<<< HEAD
             _humidityData.UpdateStatisticalData(data.temperature);
             _pressureData.UpdateStatisticalData(data.temperature);
 
@@ -23,6 +24,14 @@ namespace WeatherStation.WeatherData
             Console.WriteLine($"Temperature: {GetStatisticalData(_temperatureData)}");
             Console.WriteLine($"Humidity: {GetStatisticalData(_humidityData)}");
             Console.WriteLine($"Pressure: {GetStatisticalData(_pressureData)}");
+=======
+            _humidityData.UpdateStatisticalData(data.humidity);
+            _pressureData.UpdateStatisticalData(data.pressure);
+            Console.WriteLine("Statistical data:");
+            Console.WriteLine($"Temperature: {_temperatureData.GetStatisticalData()}");
+            Console.WriteLine($"Humidity: {_humidityData.GetStatisticalData()}");
+            Console.WriteLine($"Pressure: {_pressureData.GetStatisticalData()}");
+>>>>>>> 04054be3bc751a429a71c552fba36cafad3cc8bd
         }
     }
 }
