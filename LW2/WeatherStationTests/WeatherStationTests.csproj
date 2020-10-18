@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
 
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -14,11 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-<<<<<<< HEAD:LW2/ObserverTests/WeatherStationTests.csproj
     <ProjectReference Include="..\Observer\WeatherStation.csproj" />
-=======
-    <ProjectReference Include="..\Observer\Observer.csproj" />
->>>>>>> 04054be3bc751a429a71c552fba36cafad3cc8bd:LW2/ObserverTests/ObserverTests.csproj
   </ItemGroup>
 
 </Project>

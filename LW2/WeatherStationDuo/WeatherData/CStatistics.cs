@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WeatherStationDuo.WeatherData
 {
-    class CStatistics
+    public class CStatistics
     {
         private CStatisticalData _temperatureData = new CStatisticalData();
         private CStatisticalData _humidityData = new CStatisticalData();

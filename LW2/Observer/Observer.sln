@@ -5,14 +5,15 @@ VisualStudioVersion = 16.0.30503.244
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherStation", "WeatherStation.csproj", "{1138F876-FE24-42B7-9DA6-DDDC59202CAA}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherStationTests", "..\ObserverTests\WeatherStationTests.csproj", "{56CC06C0-33F2-4BE2-B244-BCF76B273FCA}"
-	ProjectSection(ProjectDependencies) = postProject
-		{1138F876-FE24-42B7-9DA6-DDDC59202CAA} = {1138F876-FE24-42B7-9DA6-DDDC59202CAA}
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherStationDuo", "..\WeatherStationDuo\WeatherStationDuo.csproj", "{06FB4D5D-F389-4EB1-B6EE-86709872F1B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStationDuoTests", "..\WeatherStationDuoTests\WeatherStationDuoTests.csproj", "{47B72553-60F1-4BEB-9CF7-9F3A3C930576}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherStationDuoTests", "..\WeatherStationDuoTests\WeatherStationDuoTests.csproj", "{47B72553-60F1-4BEB-9CF7-9F3A3C930576}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStationTests", "..\WeatherStationTests\WeatherStationTests.csproj", "{4957659D-2E6B-4122-B4F8-E4433123A9BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStationPro", "..\WeatherStationPro\WeatherStationPro.csproj", "{469C2D4B-11C5-4368-BF3F-21B012455ACC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherStationProDuo", "..\WeatherStationProDuo\WeatherStationProDuo.csproj", "{67D1548A-0C9C-465B-933A-FDED054F7E59}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,10 +25,6 @@ Global
 		{1138F876-FE24-42B7-9DA6-DDDC59202CAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1138F876-FE24-42B7-9DA6-DDDC59202CAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1138F876-FE24-42B7-9DA6-DDDC59202CAA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{56CC06C0-33F2-4BE2-B244-BCF76B273FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{56CC06C0-33F2-4BE2-B244-BCF76B273FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{56CC06C0-33F2-4BE2-B244-BCF76B273FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{56CC06C0-33F2-4BE2-B244-BCF76B273FCA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{06FB4D5D-F389-4EB1-B6EE-86709872F1B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{06FB4D5D-F389-4EB1-B6EE-86709872F1B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06FB4D5D-F389-4EB1-B6EE-86709872F1B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -36,6 +33,18 @@ Global
 		{47B72553-60F1-4BEB-9CF7-9F3A3C930576}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47B72553-60F1-4BEB-9CF7-9F3A3C930576}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47B72553-60F1-4BEB-9CF7-9F3A3C930576}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4957659D-2E6B-4122-B4F8-E4433123A9BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4957659D-2E6B-4122-B4F8-E4433123A9BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4957659D-2E6B-4122-B4F8-E4433123A9BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4957659D-2E6B-4122-B4F8-E4433123A9BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{469C2D4B-11C5-4368-BF3F-21B012455ACC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{469C2D4B-11C5-4368-BF3F-21B012455ACC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{469C2D4B-11C5-4368-BF3F-21B012455ACC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{469C2D4B-11C5-4368-BF3F-21B012455ACC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67D1548A-0C9C-465B-933A-FDED054F7E59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67D1548A-0C9C-465B-933A-FDED054F7E59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67D1548A-0C9C-465B-933A-FDED054F7E59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67D1548A-0C9C-465B-933A-FDED054F7E59}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
